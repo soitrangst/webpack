@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+a {
+    color: black !important;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 12px;
+}
+
+span {
+    font-size: 1.5rem;
+}
+
+.brand-logo {
+    font-family: 'Grand Hotel', cursive;
+    position: relative;
+}
+
+.mycard {
+    margin-top: 30px;
+}
+
+.nav-wrapper {
+    display: flex;
+    padding: 0 5%;
+}
+
+.rowC {
+    margin: 0.5em auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth-card {
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    margin: 10px auto;
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid rgb(112, 180, 235) !important;
+    box-shadow: 0 1px 0 0 rgb(102, 184, 209) !important;
+}
+
+.gallery {
+    max-width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    height: 100%;
+}
+
+.gallery .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-flow: row dense;
+    grid-gap: 10px;
+    align-self: stretch;
+    width: 100%;
+}
+
+.gallery .grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.gallery .grid .item {
+    position: relative;
+}
+
+.gallery .grid .item-1 {
+    grid-row: span 1;
+}
+
+.gallery .grid .item-2 {
+    grid-row: span 2;
+}
+
+.material-icons {
+    cursor: pointer;
+}
+
+.card {
+    border-radius: 10px;
+    margin: auto !important;
+    margin-top: 1.5rem !important;
+}
+
+.home-card {
+    max-width: 500px;
+    height: auto;
+    margin: 26px auto;
+}
+
+.input-button {
+    display: flex;
+    align-items: center;
+}
+
+#toast-container {
+    top: 30px !important;
+    right: 20px !important;
+    left: auto !important;
+}
+
+.nav-right {
+    flex: 1 0 0%;
+    min-width: 40px
+}
+
+.nav-left {
+    flex: 1 9999 0%;
+    min-width: 40px
+}
+
+.profile-title-L {
+    display: flex;
+    justify-content: space-around;
+    margin: 18px 0px;
+    border-bottom: 1px solid grey
+}
+
+.profile-title-M {
+    display: none;
+}
+
+.rowD {
+    display: flex;
+    flex-direction: column;
+}
+
+.avartar-profile {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.avartar-profile .avartar-img {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.hover-avatar:hover .icon-avartar {
+    opacity: 1;
+}
+
+.hover-avatar:hover .avartar-img {
+    opacity: 0.3;
+}
+
+.avartar-profile .icon-avartar {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transition: .5s ease;
+    opacity: 0;
+}
+
+.sidenav-overlay {
+    background-color: transparent !important;
+}
+
+.my-2 {
+    margin: 1.5em 0;
+}
+
+@media (max-width: 735px) {
+    .gallery {
+        max-width: 600px;
+    }
+    .search-input-mobile {
+        display: block;
+    }
+    .browser {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .gallery .grid {
+        display: grid;
+        grid-auto-flow: row dense;
+        grid-gap: 10px;
+        align-self: stretch;
+        width: 100%;
+    }
+}
+
+
+/* @media (max-width: 830px) {
+    .nav-right {
+        flex: none;
+    }
+} */
+
+@media (max-width:999px) {
+    .nav-right {
+        flex: none;
+    }
+    .profile-title-L {
+        display: none
+    }
+    .profile-title-M {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 18px 0px;
+        border-bottom: 1px solid grey;
+    }
+    .avartar-profile {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    .profile-title-M .avartar-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%
+    }
+    .search-input {
+        display: none;
+    }
+}
